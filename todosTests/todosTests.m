@@ -47,7 +47,7 @@
     [[NSRunLoop mainRunLoop] runMode:NSDefaultRunLoopMode beforeDate:date];
     [[NSRunLoop mainRunLoop] runMode:NSRunLoopCommonModes beforeDate:date];
 
-    redboxError = [[RCTRedBox sharedInstance] currentErrorMessage];
+    /*redboxError = [[RCTRedBox sharedInstance] currentErrorMessage];*/
 
     foundElement = [self findSubviewInView:vc.view matching:^BOOL(UIView *view) {
       if ([view respondsToSelector:@selector(attributedText)]) {
